@@ -36,3 +36,15 @@ def find_min_value(array)
   end
   min
 end
+
+
+def find_min_value(array)
+  counter = 0
+  min = array[counter]
+  while counter < array.length
+    array[counter] < min ? min = array[counter] : nil
+    end
+    counter += 1
+  end
+  min
+end
