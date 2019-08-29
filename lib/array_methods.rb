@@ -5,14 +5,6 @@ def find_element_index(array, value_to_find)
   end
 end
 
-# def find_max_value(array)
-#   array.max
-# end
-
-# def find_min_value(array)
-#   array.min
-# end
-
 def find_max_value(array)
   counter = 0
   max = array[counter]
@@ -25,17 +17,15 @@ def find_max_value(array)
   max
 end
 
-# def find_min_value(array)
-#   counter = 0
-#   min = array[counter]
-#   while counter < array.length
-#     if array[counter] < min 
-#       min = array[counter]
-#     end
-#     counter += 1
-#   end
-#   min
-# end
+def find_min_value(array)
+  min = array[0]
+  array.each {|element| element < min ? min = element : nil}
+  min
+end
+
+
+
+
 
 
 # def find_min_value(array)
@@ -47,9 +37,3 @@ end
 #   end
 #   min
 # end
-
-def find_min_value(array)
-  min = array[0]
-  array.each {|element| element < min ? min = element : nil}
-  min
-end
